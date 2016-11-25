@@ -1,0 +1,293 @@
+﻿body {
+  background-color: #F5F5F5;
+  color: #424242;
+  font-family: 'PT sans-serif', sans-serif;
+  text-align: center;
+}
+
+.headerText {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#moustache {
+  display: block;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+}
+
+img#moustache {
+  height: 130px;
+}
+
+header {
+  height: 600px;
+  background-image: URL("https://cleochen049.files.wordpress.com/2013/02/rita2.jpg");
+  background-size: cover;
+  background-position: 0;
+}
+
+div.headerText {
+  color: white;
+  font-size: 45px;
+  text-shadow: 3px 3px 0 #000;
+}
+
+div.headerText:first-of-type {
+  font-size: 70px;
+  padding-top: 110px;
+  margin-bottom: 3px;
+}
+
+.background .headerText {
+  position: relative;
+  top: 55%;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.background .headerText h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 20px;
+  text-shadow: 3px 3px 0 #000;
+}
+
+div.subText {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-top: 80px;
+}
+
+section.background {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+}
+
+#photo img {
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 165px;
+  height: 190px;
+  float: left;
+  margin-left: 50px;
+}
+
+@media (max-width:500px) {
+  #photo img {
+    display: none;
+  }
+}
+
+.about-myself {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-myself .greeting {
+  font-weight: bold;
+}
+
+.about-myself .greeting h2 {
+  color: #3d3d3d;
+  font-size: 3em;
+  margin-bottom: 20px;
+  -webkit-transform: translateY(-50px) scale(0);
+  transform: translateY(-50px) scale(0);
+  -webkit-transition: transform .7s;
+  -moz-transition: transform .7s;
+  transition: transform .7s;
+}
+
+.about-myself .greeting .aboutTitleVisible {
+  -webkit-transform: translateY(0px) scale(1);
+  transform: translateX(0px) scale(1);
+}
+
+.about-myself .greeting p span {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.goal .message {
+  background-color: #FADBD8;
+  font-size: 17px;
+  border-left: solid 6px #FF6666;
+  margin-left: 250px;
+  margin-right: 40px;
+  padding-left: 10px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+}
+
+section.content {
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+span.note {
+  color: #FF6666;
+  font-size: 120%;
+}
+
+span.logo {
+  color: #FFFFFF;
+  font-size: 120%;
+  background-color: #000000;
+  font-weight: bold;
+}
+
+span.invisible {
+  color: #000000;
+}
+
+svg {
+  display: inline-block;
+  height: 7vw;
+  max-height: 80px;
+  width: auto;
+  stroke: #fff;
+  stroke-width: 15;
+  fill: none;
+}
+
+#tw {
+  stroke-dasharray: 300, 0, 3000;
+}
+
+#st {
+  stroke-dasharray: 0, 0, 2300;
+}
+
+#fa {
+  stroke-dasharray: 0, 0, 2900;
+}
+
+#co {
+  stroke-dasharray: 300, 0, 3000;
+}
+
+#px {
+  stroke-dasharray: 3200, 0, 3000;
+}
+
+svg:hover #tw {
+  animation: tw .7s;
+}
+
+svg:hover #st {
+  animation: st .7s;
+}
+
+svg:hover #fa {
+  animation: fa .7s;
+}
+
+svg:hover #co {
+  animation: co .7s;
+}
+
+svg:hover #px {
+  animation: px .7s;
+}
+
+@keyframes tw {
+  10% {
+    stroke-dasharray: 300, 500, 3000
+  }
+  100% {
+    stroke-dasharray: 3300, 500, 3000;
+  }
+}
+
+@keyframes st {
+  10% {
+    stroke-dasharray: 0, 500, 2300
+  }
+  100% {
+    stroke-dasharray: 2300, 500, 2300;
+  }
+}
+
+@keyframes fa {
+  10% {
+    stroke-dasharray: 0, 500, 2900
+  }
+  100% {
+    stroke-dasharray: 2900, 500, 2900;
+  }
+}
+
+@keyframes co {
+  10% {
+    stroke-dasharray: 300, 500, 3000
+  }
+  100% {
+    stroke-dasharray: 2300, 500, 3000;
+  }
+}
+
+@keyframes px {
+  10% {
+    stroke-dasharray: 3200, 500, 3000
+  }
+  100% {
+    stroke-dasharray: 6200, 500, 3000;
+  }
+}
+
+
+/**** FOR THE DEMO  ****/
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  background-color: #FADBD8;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+section.social {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  background-color: #FF6666;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+body:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  margin: 0 5vw;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: grey;
+}
